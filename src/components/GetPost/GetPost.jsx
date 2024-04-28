@@ -1,11 +1,13 @@
 import { useEffect, useReducer } from "react";
 
+//set initial value for reducer.............!
 const initialState = {
   loading: true,
   error: "",
   post: {},
 };
 
+//set reducer methods customize............!
 const reducer = (state, action) => {
   switch (action.type) {
     case "success":
